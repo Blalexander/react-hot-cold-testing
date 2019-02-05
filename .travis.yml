@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: UizhJQGx2K5E7xgkrbwjwP0RJGDAQdA2MopZnJZNC46MMhNN76SxVLn1+Uzlln+HFJZ7Wf2QIMd+qS8WLTBqlit/ZTqbZrRIkpjtN9Y6JyP7beQZx75EbuSBxgtu1OjQVH8jL7nrdUSx5APfkl7Vt40Mjrz0jP6Gw8zMqaNxnW+7j/bZlqeGfxGyAoWRP81Oxk0hFWg++am7ElbHcVX7t9OyQ3SXSk/ZWTV/x0IBmBtOH1cTifK/WthADYT64qHvBiC1ZOFOlET+EAZzcNjwB+rULYr8vQ/WN+XP7tSXA3yT4wFYKss8ZTm2smXi5CDmC5vh/Sg399hyGdW/+KB/LSzm3vn7OgposZ19brAtfOES37HdtKb3ag/6tvno/j5Hj90L81xMl/soi/G0PzOtft7ESvVOczvJoucYxNt4u0aQYT1Qfz9Xj3Bck/VdAk97WJiYesGb7fgUc0TCA3p7kYIQoe7LCYPmDfZ7xyNblzq0B9vPfKgG70edQH8EJv8++a4Xk8ei5TaILYjlH6niw8zXYQpHB1A8vvKk+1aw0QvOQLYC1XizzMMLRdtlwGu4aRXNMaQ5B02WOfZdxIMaKbEy2Lq6hFT2WeuB8HWwLqdQrpi69qZp/9Zjcg3rkwy7zFC8FYtDtLTOiv8gdK5Gwe3OitmAL8JpyREHoscdsVE=
+  app: react-hot-cold-testing
+  on:
+    repo: Blalexander/react-hot-cold-testing
